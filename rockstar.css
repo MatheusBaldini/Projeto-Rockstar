@@ -34,7 +34,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 25px;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 iframe {
