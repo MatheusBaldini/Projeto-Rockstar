@@ -6,38 +6,40 @@
 
 /* Corpo */
 body {
+  overflow-y: hidden;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("./imagens/1343214.jpeg");
+  background-position: center;
   background-size: cover;
   color: rgb(255, 255, 255);
-  font-family: monospace;
+  background-attachment: fixed;
 }
 
-/* HEADER,MENU*/
+/* CABEÇALHO*/
 header {
   display: flex;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.61);
 }
 
-/* IMAGEM DA LOGO */
 img {
   max-width: 80px;
 }
 
-/* SECAO PRINCIPAL  */
-
+/* SESSÃO PRINCIPAL  */
 .container-principal {
+  margin: 50px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
-  min-height: 92vh;
+  gap: 25px;
+  min-height: 100vh;
 }
 
 iframe {
-  box-shadow: 4px 4px 14px 0px rgb(255, 255, 255);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+
   width: 900px;
   height: 450px;
 }
@@ -45,9 +47,36 @@ iframe {
 button {
   padding: 15px 60px 20px 60px;
   background: none;
-  border: 1px SOLID WHITE;
+  border: 1px solid white;
   color: WHITE;
   border-radius: 5px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+button:hover {
+  background-color: aliceblue;
+  color: rgb(0, 0, 0);
+  transform: translateY(-10px);
 }
 
-/* SEÇÃO SEGUNDARIA */
+/* MEDIA CELULAR */
+@media (max-width: 767px) {
+  img {
+    max-width: 55px;
+  }
+  iframe {
+    width: 310px;
+    height: 200px;
+  }
+
+  button {
+    padding: 10px 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  iframe {
+    width: 550px;
+    height: 300px;
+  }
+}
