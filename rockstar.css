@@ -1,0 +1,53 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./imagens/1343214.jpeg");
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  font-family: monospace;
+}
+
+/* HEADER,MENU*/
+header {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.61);
+}
+
+/* IMAGEM DA LOGO */
+img {
+  max-width: 80px;
+}
+
+/* SECAO PRINCIPAL  */
+
+.container-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  min-height: 92vh;
+}
+
+iframe {
+  box-shadow: 4px 4px 14px 0px rgb(255, 255, 255);
+  width: 900px;
+  height: 450px;
+}
+
+button {
+  padding: 15px 60px 20px 60px;
+  background: none;
+  border: 1px SOLID WHITE;
+  color: WHITE;
+  border-radius: 5px;
+}
+
+/* SEÇÃO SEGUNDARIA */
